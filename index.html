@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Useless Productivity™</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-shapes">
+    <span class="shape shape-one"></span>
+    <span class="shape shape-two"></span>
+    <span class="shape shape-three"></span>
+    <span class="shape shape-four"></span>
+</div>
+
+<header class="topbar">
+
+    <div class="brand">
+        <div class="brand-mark">U</div>
+        <div>
+            <div class="brand-name">USELESS PRODUCTIVITY™</div>
+            <div class="brand-subtitle">The world's least necessary productivity system</div>
+        </div>
+    </div>
+
+    <div class="system-status">
+        <span class="status-dot"></span>
+        SYSTEM ONLINE
+    </div>
+
+    <div class="top-profile">
+        <div class="mini-level">
+            <span>LEVEL</span>
+            <strong id="levelNumber">01</strong>
+        </div>
+
+        <div class="mini-user">
+            <span id="navUsername">Anonymous</span>
+            <small id="navTitle">Professional Time Waster</small>
+        </div>
+    </div>
+
+</header>
+
+
+<main class="dashboard">
+
+    <!-- HERO -->
+    <section class="hero-card">
+
+        <div class="hero-decoration">hehe</div>
+
+        <div class="hero-top">
+            <span class="eyebrow">CURRENT STATUS</span>
+            <span class="live-pill">
+                <span></span>
+                LIVE WASTING
+            </span>
+        </div>
+
+        <div class="hero-title">
+            <span>YOU ARE</span>
+            <strong>DOING</strong>
+            <strong class="hero-nothing">NOTHING.</strong>
+        </div>
+
+        <p class="hero-description">
+            Congratulations. You have successfully opened an application
+            specifically designed to help you accomplish absolutely nothing.
+        </p>
+
+        <div class="timer-display" id="timer">00:00:00</div>
+
+        <button class="nothing-button" id="nothingBtn">
+            <span class="button-icon">◉</span>
+            I AM DOING NOTHING
+            <span class="button-arrow">→</span>
+        </button>
+
+        <div class="hero-footer">
+            <div>
+                <span>POINTLESS CLICKS</span>
+                <strong id="clickCount">0</strong>
+            </div>
+
+            <div>
+                <span>XP WASTED</span>
+                <strong id="xpCount">0</strong>
+            </div>
+
+            <div>
+                <span>SESSION STATUS</span>
+                <strong>ACTIVE</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- AI DIAGNOSIS -->
+    <section class="ai-card">
+
+        <div class="card-heading">
+            <div>
+                <span class="card-kicker">01 / ARTIFICIAL INTELLIGENCE</span>
+                <h2>🧠 Useless AI</h2>
+            </div>
+
+            <span class="ai-status">ANALYZING</span>
+        </div>
+
+        <div class="ai-face">◎</div>
+
+        <p class="ai-label">CURRENT DIAGNOSIS</p>
+
+        <h3 id="aiDiagnosis">
+            Mild signs of productivity avoidance detected.
+        </h3>
+
+        <p id="aiComment" class="ai-comment">
+            The AI is watching. Unfortunately, it is not impressed.
+        </p>
+
+        <div class="ai-progress">
+            <div id="aiProgress"></div>
+        </div>
+
+        <div class="ai-footer">
+            <span>AI CONFIDENCE</span>
+            <strong id="aiConfidence">72%</strong>
+        </div>
+
+    </section>
+
+
+    <!-- METRICS -->
+    <section class="metrics-grid">
+
+        <div class="metric-card metric-pink">
+            <span class="metric-icon">💀</span>
+            <span class="metric-label">USELESSNESS</span>
+            <strong id="uselessness">12%</strong>
+            <div class="metric-bar">
+                <div id="uselessBar"></div>
+            </div>
+        </div>
+
+        <div class="metric-card metric-yellow">
+            <span class="metric-icon">🛋️</span>
+            <span class="metric-label">LAZINESS INDEX</span>
+            <strong id="laziness">08%</strong>
+            <div class="metric-bar">
+                <div id="lazyBar"></div>
+            </div>
+        </div>
+
+        <div class="metric-card metric-blue">
+            <span class="metric-icon">📉</span>
+            <span class="metric-label">PRODUCTIVITY</span>
+            <strong id="productivity">100%</strong>
+            <div class="metric-bar">
+                <div id="productivityBar"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- DAILY REVIEW -->
+    <section class="review-card">
+
+        <div class="card-heading">
+            <div>
+                <span class="card-kicker">02 / MANAGEMENT</span>
+                <h2>📋 Daily Performance Review</h2>
+            </div>
+
+            <span class="review-badge">CONFIDENTIAL</span>
+        </div>
+
+        <div class="review-score">
+            <span>OVERALL PERFORMANCE</span>
+            <strong id="reviewScore">4.2/10</strong>
+        </div>
+
+        <div class="review-row">
+            <span>Productivity</span>
+            <div class="review-bar">
+                <div id="reviewProductivity"></div>
+            </div>
+            <strong id="reviewProductivityText">100%</strong>
+        </div>
+
+        <div class="review-row">
+            <span>Laziness</span>
+            <div class="review-bar">
+                <div id="reviewLaziness"></div>
+            </div>
+            <strong id="reviewLazinessText">8%</strong>
+        </div>
+
+        <div class="manager-comment">
+            <span>MANAGER COMMENT</span>
+            <p id="managerComment">
+                “Strong commitment to doing absolutely nothing. Keep it up.”
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- MISSIONS -->
+    <section class="missions-card">
+
+        <div class="card-heading">
+            <div>
+                <span class="card-kicker">03 / DAILY OBJECTIVES</span>
+                <h2>🎯 Useless Missions</h2>
+            </div>
+
+            <span class="mission-count" id="missionCount">0 / 5</span>
+        </div>
+
+        <p class="section-description">
+            Complete these completely unnecessary objectives.
+        </p>
+
+        <div class="missions-list" id="missionsList"></div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements-card">
+
+        <div class="card-heading">
+            <div>
+                <span class="card-kicker">04 / RECOGNITION</span>
+                <h2>🏆 Achievements</h2>
+            </div>
+
+            <span class="achievement-count" id="achievementCount">0 UNLOCKED</span>
+        </div>
+
+        <div class="achievement-grid" id="achievementGrid"></div>
+
+    </section>
+
+
+    <!-- BIG GENERATOR -->
+    <section class="generator-card">
+
+        <div class="generator-left">
+
+            <span class="card-kicker">05 / RANDOM ACTIVITY GENERATOR</span>
+
+            <h2>
+                🎰 Give Me<br>
+                Something To Do
+            </h2>
+
+            <p>
+                You could be productive right now.
+                Instead, let our highly advanced technology
+                generate something completely pointless.
+            </p>
+
+            <button class="generator-button" id="generatorBtn">
+                ✨ GIVE ME SOMETHING USELESS
+            </button>
+
+        </div>
+
+        <div class="generator-result">
+
+            <span>GENERATED ACTIVITY</span>
+
+            <div id="generatorIcon" class="generator-icon">?</div>
+
+            <h3 id="generatorResult">
+                Waiting for you to waste your time...
+            </h3>
+
+            <small id="generatorNumber">GENERATION #000</small>
+
+        </div>
+
+    </section>
+
+
+    <!-- ANALYTICS -->
+    <section class="analytics-card">
+
+        <div class="card-heading analytics-heading">
+
+            <div>
+                <span class="card-kicker">06 / REAL-TIME ANALYTICS</span>
+                <h2>📊 Useless Analytics</h2>
+            </div>
+
+            <div class="chart-legend">
+                <span><i class="legend-pink"></i> Uselessness</span>
+                <span><i class="legend-blue"></i> Productivity</span>
+            </div>
+
+        </div>
+
+        <div class="chart-info">
+            <div>
+                <span>WASTED TIME</span>
+                <strong id="chartTime">0m</strong>
+            </div>
+
+            <div>
+                <span>DATA POINTS</span>
+                <strong id="dataPoints">0</strong>
+            </div>
+
+            <div>
+                <span>TREND</span>
+                <strong id="trend">DECLINING ↓</strong>
+            </div>
+        </div>
+
+        <div class="chart-wrapper">
+            <canvas id="uselessChart"></canvas>
+        </div>
+
+        <p class="chart-note">
+            Live session data. Every few seconds you waste more time,
+            the graph becomes increasingly disappointed in you.
+        </p>
+
+    </section>
+
+
+    <!-- TEXT LAB -->
+    <section class="text-lab">
+
+        <div class="card-heading">
+
+            <div>
+                <span class="card-kicker">07 / NATURAL LANGUAGE PROCESSING</span>
+                <h2>💬 Useless Text Lab</h2>
+            </div>
+
+            <span class="text-badge">NO ACTUAL AI REQUIRED</span>
+
+        </div>
+
+        <p class="section-description">
+            Type literally anything. Our extremely unnecessary AI will respond.
+        </p>
+
+        <textarea
+            id="uselessInput"
+            placeholder="Tell the Useless AI something..."
+            maxlength="500"
+        ></textarea>
+
+        <div class="input-bottom">
+
+            <span id="characterCount">0 / 500</span>
+
+            <div class="input-actions">
+                <button class="text-action pink-action" id="excuseBtn">
+                    📝 MAKE AN EXCUSE
+                </button>
+
+                <button class="text-action blue-action" id="thoughtBtn">
+                    🧠 ANALYZE THOUGHT
+                </button>
+
+                <button class="text-action purple-action" id="aiBtn">
+                    💬 ASK USELESS AI
+                </button>
+            </div>
+
+        </div>
+
+        <div class="text-response" id="textResponse">
+
+            <div class="response-top">
+                <span>USELESS AI RESPONSE</span>
+                <span id="responseStatus">WAITING...</span>
+            </div>
+
+            <p id="responseText">
+                Your completely unnecessary response will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEVEL + PROFILE -->
+    <section class="level-card">
+
+        <div class="level-main">
+
+            <span class="card-kicker">08 / PROGRESSION</span>
+
+            <h2>⭐ Uselessness Level</h2>
+
+            <div class="level-number">
+                <span>LVL</span>
+                <strong id="bigLevel">01</strong>
+            </div>
+
+            <h3 id="levelTitle">AMATEUR</h3>
+
+            <div class="xp-bar">
+                <div id="xpBar"></div>
+            </div>
+
+            <div class="xp-label">
+                <span id="currentXP">0 XP</span>
+                <span id="nextXP">100 XP</span>
+            </div>
+
+        </div>
+
+        <div class="profile-box">
+
+            <span>YOUR USELESS IDENTITY</span>
+
+            <input
+                type="text"
+                id="usernameInput"
+                placeholder="Enter your name"
+                maxlength="20"
+            >
+
+            <button id="saveProfile">SAVE IDENTITY</button>
+
+            <div class="profile-title" id="profileTitle">
+                Professional Time Waster
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEADERBOARD -->
+    <section class="leaderboard-card">
+
+        <div class="card-heading">
+
+            <div>
+                <span class="card-kicker">09 / GLOBAL NOTHINGNESS</span>
+                <h2>🥇 Useless Leaderboard</h2>
+            </div>
+
+            <span class="leaderboard-live">LIVE*</span>
+
+        </div>
+
+        <p class="leaderboard-note">
+            *Not actually global. We have no servers. Please don't investigate.
+        </p>
+
+        <div class="leaderboard-list" id="leaderboardList"></div>
+
+    </section>
+
+
+    <!-- PANIC -->
+    <section class="panic-card">
+
+        <div>
+
+            <span class="card-kicker">10 / EMERGENCY PRODUCTIVITY PROTOCOL</span>
+
+            <h2>🚨 I SHOULD BE PRODUCTIVE</h2>
+
+            <p>
+                Feeling a sudden and terrifying desire to accomplish something?
+                This button may help.
+            </p>
+
+        </div>
+
+        <button id="panicBtn" class="panic-button">
+            PANIC
+            <span>↗</span>
+        </button>
+
+    </section>
+
+</main>
+
+
+<!-- PANIC MODAL -->
+<div class="modal-overlay" id="panicModal">
+
+    <div class="panic-modal">
+
+        <div class="panic-warning">⚠ PRODUCTIVITY EMERGENCY ⚠</div>
+
+        <div class="panic-countdown" id="panicCountdown">5</div>
+
+        <h2>OH NO.</h2>
+
+        <p id="panicMessage">
+            You are about to become productive.
+        </p>
+
+        <div class="panic-options">
+
+            <button id="cancelPanic">
+                WAIT, I CHANGED MY MIND
+            </button>
+
+            <button id="continuePanic">
+                BECOME PRODUCTIVE
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ACHIEVEMENT POPUP -->
+<div class="achievement-popup" id="achievementPopup">
+
+    <div class="popup-icon">🏆</div>
+
+    <div>
+        <span>ACHIEVEMENT UNLOCKED</span>
+        <strong id="popupAchievement">Professional Procrastinator</strong>
+    </div>
+
+</div>
+
+
+<!-- NOTIFICATION -->
+<div class="notification" id="notification">
+
+    <div class="notification-icon">🔔</div>
+
+    <div>
+        <strong id="notificationTitle">Useless Notification</strong>
+        <p id="notificationText">You are doing great at doing nothing.</p>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
